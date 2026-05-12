@@ -1,0 +1,95 @@
+# 🎵 CARA MENGGANTI LAGU "SHAPE MY HEART"
+
+Saat ini website menggunakan lagu dari internet. Jika Anda memiliki file lagu sendiri, ikuti langkah berikut:
+
+## ✅ Langkah 1: Siapkan File Lagu
+
+1. Cari file lagu **"Shape My Heart.mp3"** yang Anda miliki
+2. Copy file tersebut ke folder **"Permintaan Maaf"** (folder yang sama dengan index.html)
+3. Biarkan nama file seperti apa adanya atau rename menjadi: `shape-my-heart.mp3`
+
+Struktur folder akan terlihat seperti:
+```
+Permintaan Maaf/
+├── index.html
+├── style.css
+├── script.js
+├── shape-my-heart.mp3  ← File lagu ditaruh di sini
+├── README.md
+└── BUKA_DI_HP.txt
+```
+
+## ✅ Langkah 2: Edit File index.html
+
+1. Buka file **index.html** dengan Text Editor (Notepad, VS Code, dll)
+   - Klik kanan pada index.html → "Open with" → "Notepad" atau editor favorit
+
+2. Cari baris yang berisi:
+   ```html
+   <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+   ```
+
+3. Ganti dengan:
+   ```html
+   <source src="shape-my-heart.mp3" type="audio/mpeg">
+   ```
+
+4. **SAVE FILE** (Ctrl + S)
+
+## ✅ Langkah 3: Test Website
+
+1. Buka file index.html dengan browser (double-click)
+2. Cek apakah lagu dapat diputar
+3. Jika berhasil, website siap diakses dari HP
+
+---
+
+## 📝 Contoh Visual
+
+**SEBELUM (dari internet):**
+```html
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+```
+
+**SESUDAH (dari file lokal):**
+```html
+<source src="shape-my-heart.mp3" type="audio/mpeg">
+```
+
+---
+
+## ⚠️ Penting
+
+- **Nama file lagu harus tepat** (case-sensitive)
+- **Harus format MP3** (atau ubah type menjadi "audio/wav", "audio/ogg" dll sesuai format file)
+- **File lagu harus di folder yang SAMA dengan index.html**
+- Jangan lupa **SAVE** setelah edit
+
+---
+
+## 🎵 Format File yang Didukung
+
+- ✅ MP3 → type="audio/mpeg"
+- ✅ WAV → type="audio/wav"
+- ✅ OGG → type="audio/ogg"
+- ✅ M4A → type="audio/mp4"
+
+---
+
+## 💡 Tips
+
+Jika ingin menambah beberapa lagu dalam playlist:
+
+```html
+<audio controls>
+    <source src="shape-my-heart.mp3" type="audio/mpeg">
+    <source src="lagu2.mp3" type="audio/mpeg">
+    Browser Anda tidak mendukung audio player.
+</audio>
+```
+
+Browser akan otomatis memilih format yang didukung.
+
+---
+
+Semoga berhasil! 🎶❤️

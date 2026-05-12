@@ -1,0 +1,85 @@
+# 🚀 PANDUAN CEPAT - Buka di HP/Android
+
+## ⚡ CARA PALING MUDAH (Server Lokal - Recommended)
+
+### Step 1: Buka Command Prompt
+- Tekan **Windows + R**
+- Ketik: `cmd`
+- Tekan Enter
+
+### Step 2: Masuk ke Folder
+```
+cd "C:\Users\Dani\Documents\Permintaan Maaf"
+```
+
+### Step 3: Jalankan Server
+```
+python -m http.server 8000
+```
+
+Jika berhasil, akan muncul:
+```
+Serving HTTP on 0.0.0.0 port 8000
+```
+
+### Step 4: Cari IP Address PC
+Buka Command Prompt baru, ketik:
+```
+ipconfig
+```
+
+Cari yang namanya **"IPv4 Address"** (biasanya: 192.168.x.x)
+Contoh: `192.168.1.100`
+
+### Step 5: Buka di HP (WiFi harus sama dengan PC)
+Di HP, buka **Browser** (Chrome, Firefox, dll)
+Ketik di address bar:
+```
+http://192.168.1.100:8000
+```
+
+Tekan Enter, SELESAI! ✨
+
+---
+
+## 📱 Jika Tidak Bisa via Server
+
+### Alternatif 1: Copy ke HP via USB
+1. Sambungkan HP dengan USB Cable
+2. Copy folder "Permintaan Maaf" ke HP
+3. Di HP, buka **File Manager**
+4. Cari folder "Permintaan Maaf"
+5. Tap **index.html**
+6. Pilih buka dengan **Browser**
+
+### Alternatif 2: Email Sendiri
+1. Compress folder "Permintaan Maaf" jadi .zip
+2. Email ke diri sendiri
+3. Di HP, download file zip
+4. Extract/buka folder
+5. Tap index.html → pilih browser
+
+### Alternatif 3: Google Drive
+1. Upload folder ke Google Drive
+2. Buka index.html dari Google Drive
+3. Download atau lihat preview
+
+---
+
+## ❓ Pertanyaan Umum
+
+**P: Server tidak berjalan?**
+J: Pastikan Python sudah diinstall. Cek dengan ketik `python --version`
+
+**P: HP tidak bisa akses PC?**
+J: Pastikan HP dan PC terhubung WiFi yang SAMA
+
+**P: Lagu tidak terputar?**
+J: Pastikan ada koneksi internet. Atau copy file mp3 ke folder dan ubah URL di index.html
+
+**P: Website terlihat aneh di HP?**
+J: Coba rotate HP ke landscape, atau refresh halaman
+
+---
+
+**Yang paling penting**: Website ini sudah 100% responsive dan siap dibuka di HP! 📱❤️
